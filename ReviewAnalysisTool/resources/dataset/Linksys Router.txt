@@ -8,7 +8,7 @@ router[+2][p] ##It really is a great buy if you are lookin at having just one mo
 router[+2] ##There are 3 computers in my house all getting wireless connection from this router, and everybody is happy with it. 
 ##I do not really know why some people are tearing this router !
 ##apart on their reviews, they are talking about installation problems and what not. 
-setup[+2], ROUTER[+][s] ##Its the easiest thing to setup i thought, and i am only 16...So with all that said, BUY THE ROUTER!!!!     
+setup[+2], ROUTER[+1][s] ##Its the easiest thing to setup i thought, and i am only 16...So with all that said, BUY THE ROUTER!!!!     
 [t]
 install[-2], router[+1] ##It's probably a fine router, but I found the install wizard to be of poor quality.  
 ##If you have good networking knowledge, you'll abandon the wizard, use the 100-page online manual, and be fine.   
@@ -276,7 +276,7 @@ install[+2] ##It's easy to install the security on this product but Linksys does
 wizard[-2]##Knocked 1 star off for the install wizard - it wasted alot of time running it.     
 [t]
 ##My old Linksys router recently died after 2.5 years of service. 
-Linksys[+][cc] ##While I am not happy that a solid state device died after such a short period of time, my quick review of this product space did not yield any other brands that seem much better than Linksys.  
+Linksys[+1][cc] ##While I am not happy that a solid state device died after such a short period of time, my quick review of this product space did not yield any other brands that seem much better than Linksys.  
 install[+2] ##The new router came with an updated setup utility that makes getting the router installed a fairly straight forward process. 
 ##I had to change the channel of the router, like the channel on a cordless phone, to get it to work with the Linksys Instant USB Wireless Adapter v2.6. 
 ##I also had to do this with the old router.  
@@ -308,7 +308,7 @@ setup[-1], documentation[+1] ##The setup wasn't quite perfect the first time -- 
 ##running the installation wizard again.  
 set up[+1] ##I haven't tried to set up any advanced features on the router, but it is not difficult to set up for basic use.  
 documentation[+2][cs] ##The documentation is much better than the documentation that came with the 11b router -- I needed a lot of help from Linksys technical assistance to set that one up.  
-router[+][cs], signal strength[+2] ##I like this router a whole lot better the Linksys 11b router it replaced -- the signal strength seems ot be much stroners, seldom falling below the "very good" range (and most often excellent within 25-50 feet of the router.  
+router[+1][cs], signal strength[+2] ##I like this router a whole lot better the Linksys 11b router it replaced -- the signal strength seems ot be much stroners, seldom falling below the "very good" range (and most often excellent within 25-50 feet of the router.  
 transmission speed[+2] ##The transmission speed is also quite good, with pages loading very quickly.  
 backward[+2] ##I have had no problem either with backward compatiaibility, in that the "mixed mode" feature lets you both 54 and 11 Mb cards off the router.     
 [t]
@@ -464,7 +464,7 @@ set up[+3] ##To set up the xbox, wap, and ethernest bridge, with the encryption 
 setup software[+3] ##The setup software did everything. 
 ##This is my first foray in!
 ##to the wrld of wireless and it couldn't have gone better. 
-connection+3] ##My Xbox connection seems as good as with a cable. 
+connection[+3] ##My Xbox connection seems as good as with a cable. 
 ##My Xbox is about 70ft and 3 walls away from the WRT54G. 
 router[+2] ##In a week of use i've never had to reboot the router. 
 ##There is also a Panasonic cordless phone (2.4 Ghz) between the wap and the ethernet bridge but it never causes a problem. 
@@ -480,7 +480,7 @@ firmware[-2] ##The firmware has bugs too, so download and install the latest fir
 ##After installing the firmware hold the reset button at the back for 30 secs.  
 ##Also use Netstat on the Linksys website which helps in setting it up. 
 instant setup[-2] ##The instant setup button in the front of the router messes up the network it is better to configure the router manually. 
-router[-][cc] ##This is NOT a router I would suggest for a novice user, my old Dlink DI52!
+router[-1][cc] ##This is NOT a router I would suggest for a novice user, my old Dlink DI52!
 ##4 was much more easier to setup but had slower speeds and not as configurable as this. 
 VOIP[+2] ##It works well with my VOIP adapter, which is also a Linksys. 
 ##At first I was going to give it a really bad review. 
@@ -585,7 +585,7 @@ setup[+2] ##Getting the router setup in a "vanilla" configuration that works for
 CD[+3] ##Second, the setup CD actually worked perfectly. 
 ##I was able to use t!
 ##he brower-based administrative screen with no problems. 
-installation[+][cs] ##I still need to read up on some of the security settings, etc to fully understand all that's up there, but bottom-line is that the installation was like night and day compared to the Speedboost router. 
+installation[+1][cs] ##I still need to read up on some of the security settings, etc to fully understand all that's up there, but bottom-line is that the installation was like night and day compared to the Speedboost router. 
 performance[+3], documentation[-2], support[-2][u] ##The performance of the router itself deserves 5 stars, but the Linksys documentation and support is so poor that I can only give it 4. 
 manual[-2][u] ##Even the PDF manual that comes with it is pretty vague for someone not familiar with "MAC settings", etc. 
 ##If you follow the directions to the letter though then you should be OK on the setup.     

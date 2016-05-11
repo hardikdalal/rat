@@ -1,4 +1,5 @@
 [t]
+LCD[+3]camera quality[+3]##Especially the LCD is big and the camera quality is among the very best around.
 phone[+3][u]##I've had this beauty for nearly 2 months now and I truely love it.
 battery life[-2]##The only disappointment so far has been battery life.
 battery life[-2][u]##Mine generally requires a charege every 48 hours or so and I don't really talk on it that much.
@@ -12,7 +13,6 @@ phone[+3]##If you are looking for an upgrade, this is definitely the phone for y
 size[+2]##3660 had similar features, but that is big in size.
 6600[+3]##6600 looks and feels nice.
 bluetooth[+3]##This one is full of features(has bluetooth).
-LCD[+3]camera quality[+3]##Especially the LCD is big and the camera quality is among the very best around.
 PDA[+3]##I have set up it's PDA features with avantgo.com where you can download info from sites like weather,mapquest maps/directions into it, which is great.
 s/w[+3]##Using supplied s/w, you can transfer all addresses from a different nokia phone into it.
 battery life[+3][u]##Goes ~3 days after a charge.

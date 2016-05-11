@@ -4,6 +4,8 @@ import javax.xml.parsers.*;
 import java.io.*;
 import java.nio.file.Files;
 import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class TextReviewHandler {
 	public static ArrayList parseXML(String fileName) {
@@ -59,6 +61,9 @@ public class TextReviewHandler {
 		try {
 			br = new BufferedReader(new FileReader("resources/dataset/"+fileName)); 
 			String line = "";
+			String regex = "\\[.\\d\\]";
+			Pattern pattern = Pattern.compile(regex);
+			String remRegex = "\\[\\w{1,2}\\]";
 			while ((line = br.readLine()) != null) {
 				if(line.contains("[t]"))
 					continue;
@@ -66,43 +71,49 @@ public class TextReviewHandler {
 					String text = line.substring(line.lastIndexOf("##") + 1);
 					reviewList.add(text);
 				}
-				else {
-					String[] temp = line.split("##");
-					String text = temp[1];
+				else {					
+					String[] tempArray = line.split("##");					
+					String text = tempArray[1];
+					//text = text.replaceAll("\\#", "");
 					reviewList.add(text);
-					String aspectsSentimentRaw = temp[0];
-					String[] aspectsSentiments = aspectsSentimentRaw.split(",");
+					String aspectsSentimentRaw = tempArray[0].trim();					
+					String[] aspectsSentiments = aspectsSentimentRaw.split(",");					
 					for(String aspectSentimentPair : aspectsSentiments) {
-//						String[] parts = aspectSentimentPair.split("\\[");
-//						String aspect = parts[0];
-//						String part2 = parts[1].substring(0,parts[1].length() - 1);						
-//						int sentimentValue = Integer.parseInt(part2);
-						String[] parts = aspectSentimentPair.split("\\[?(\\-|\\+)\\d\\]");
-						
-//						aspectMap.put(aspect,sentimentValue);
-					}					
-				}								
+						String pair = aspectSentimentPair.replaceAll(remRegex, "");						
+						if(pair.equals("") || pair == null)
+							continue;
+						Matcher matcher = pattern.matcher(pair);
+						List<Integer> sentimentValues = new LinkedList<Integer>();
+						while(matcher.find()) {
+							String tempStr = matcher.group().replace('[', ' ');
+							tempStr = tempStr.replace(']', ' ');
+							tempStr = tempStr.trim();
+							sentimentValues.add(Integer.parseInt(tempStr));
+						}
+						String str = pair.replaceAll(regex, ";delimiter;").toLowerCase();
+						String[] parts = str.split(";delimiter;");
+						int count = 0;
+						for(String part : parts) {							
+							aspectMap.put(part.trim(),sentimentValues.get(count));
+							count++;
+						}
+					}
+				}
 			}
-			br.close();
-			int counter = 0;
+			br.close();			
 			File reviewFileName = new File(GlobalVars.reviewFileName);
 			Files.deleteIfExists(reviewFileName.toPath());
 			reviewFileName.createNewFile();
 			PrintWriter writer = new PrintWriter(reviewFileName, "UTF-8");
 			for(String reviewItem : reviewList) {
-				writer.println(reviewItem);
-				++counter;
-			}
+				writer.println(reviewItem);				
+			}			
 			writer.close();
-			System.out.println(counter);
-			counter = 0;
 			writer = new PrintWriter(GlobalVars.goldStandardAspectsFileName, "UTF-8");			
 			for(Map.Entry<String,Integer> entry : aspectMap.entrySet()) {				
-				writer.println(entry.getKey()+","+entry.getValue());
-				++counter;
-			}
-			writer.close();
-			System.out.println(counter);
+				writer.println(entry.getKey()+","+entry.getValue());				
+			}			
+			writer.close();			
 		}
 		catch(Exception ex) {
 			ex.printStackTrace(System.err);

@@ -41,6 +41,7 @@ public class Tool {
 				System.exit(0);
 			}			
 			generateReviewTextFile();
+			*/
 			StanfordDependencyParser.parseReviewFile(GlobalVars.reviewFileName);
 			
 			choice = 0;
@@ -57,9 +58,8 @@ public class Tool {
 			sc.close();
 			
 			Filter.apply(choice);
-			SWN3.calculateSentimentScore();			
-			Evaluation.generateGoldStandard();
-			Evaluation.compare();*/
+			SWN3.calculateSentimentScore();
+			Evaluation.compare();
 		}
 		catch(Exception ex) {
 			ex.printStackTrace(System.err);				

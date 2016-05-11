@@ -435,7 +435,7 @@ features[+2]## All the "cool" features of the mini, but with 20GB instead of 5.
 use[+2]## Really easy to use.
 click wheel[+2]## Has the click wheel and the ability to scan through thousnds of songs and organizes them great.
 helpline[+2]## Has a great helpline.
-USB[+2},charger[+1]## They fix the problem and help you with whatever your I-Pod needs Comes with two USB ports and a charger.
+USB[+2],charger[+1]## They fix the problem and help you with whatever your I-Pod needs Comes with two USB ports and a charger.
 I-Tunes[+1]## They are EXTREMELY convient and you don't have to buy them seperately Has I-Tunes, which provides qulity music at low prices.
 Breaks[-2]##  Cons Breaks easily. 
 Hard drive[-1]##Hard drive screws up occasionally

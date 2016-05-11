@@ -8,7 +8,7 @@ navigating[-3] ##Most of us just want to plug and play, not spend a year navigat
 ##I don't care what ELSE it can do.
 ##I just want MUSIC to eminate from it when I want, how I want.
 sound[+2] ##All of this said [as it's on it's way back to Amazon], the one song it did include provided far better sound than the IPOD. 
-bass[+2],highs[+2} ##The base was deeper and the highs were crisper. 
+bass[+2],highs[+2] ##The base was deeper and the highs were crisper. 
 touch-pad[-3], instruction[-3] ##Unfortunately, the touch-pad issues [non-intuitive] and poor instruction guide killed it. 
 [t]
 ##Why get locked in to crappy Itunes weather you want to or not? 
@@ -55,7 +55,7 @@ rechargeable battery[+3] ##Creative did well on its rechargeable battery feature
 ##5.
 ##) I purchased this device primarily to record off the built-in FM receiver for lectures and seminars that are broadcast live over a FM signal for the hearing impaired. 
 FM receiver[+1] ##The Zen Micro FM receiver is ok, not great. 
-FM receiver[-][cc] ##IRiver has a better FM receiver built in, but the drawback to IRiver products is they are flimsy and poorly constructed. 
+FM receiver[-1][cc] ##IRiver has a better FM receiver built in, but the drawback to IRiver products is they are flimsy and poorly constructed. 
 ##I have gone through two of them in two years. . 
 ##6.
 constructed[+3][u] ##) The Zen Micro appears sturdy and well constructed, hefty, if you will, far better than many of its competitors. . 
@@ -217,10 +217,10 @@ car adapter[+2] ##However, if there was one thing I liked about the creative, it
 storage[-2][u] ##Even after all the nightmare sound problems, I'd still half-way like this product if it kept it's promise; the ability to store 1500 songs. 
 storage[-2][u] ##I got about 700 loaded up before it told me I was full, and at that point, I was ready to toss it out the window.   
 ##If you do not care about sound/music quality in the least, and don't mind the ability to store 800 songs less than promised, get the creative zen micro.   ##Otherwise, you should get an ipod. 
-creative[-][cc]##My friend has an ipod, and although the sound quality probably won't meet most audiophile standards, the product itself is better than anything creative has made.
+creative[-1][cc]##My friend has an ipod, and although the sound quality probably won't meet most audiophile standards, the product itself is better than anything creative has made.
 ##features[-][u][cc]It hold's a promised amount of songs, and the headphone jack/volume controls deliver a more impressive performance than creative's.   
 ##If you're an audiophile, you already know that mp3 players are far from impressive. 
-##player[-][s]However, this one makes an ipod sound like your old LP's, so even if you're a casual listener, I'd advise that you avoid the purchase of this product. Terrible.      
+##player[-1][s]However, this one makes an ipod sound like your old LP's, so even if you're a casual listener, I'd advise that you avoid the purchase of this product. Terrible.      
 [t]
 ##I bought this two months ago at a local retailer, after spending considerable time reading reviews here of this and other 5GB players. 
 compatibility with windows media player[+3]  ##While they all seem to have their own positives and negatives, I picked the Zen Micro over the Ipod mini, because I am not an Apple person, never has been - I wanted something that is fully compatible with Windows Media Player. 
@@ -252,7 +252,7 @@ battery life[-2] ##The only reason for not giving it 5 stars: the claimed batter
 ##They seem to be working on a fix and will probably sort it out soon. 
 ##For me, I get through a typical day's listening just fine, and I could probably squeeze out two days, but it really is no big deal to just charge the Micro overnight. 
 battery life[-2] ##Even the "shorter" battery life, though, has not impaired my positive experience with the Zen Micro in any way. 
-warranty price[+2][u], accessories[+2], player[+][s] ##If you can get one with all the accessories and a cheap extended warranty, this is the player to get! Highly recommended.     
+warranty price[+2][u], accessories[+2], player[+1][s] ##If you can get one with all the accessories and a cheap extended warranty, this is the player to get! Highly recommended.     
 [t]
 ##Update 8/11/05:  The latest release of the iPOD firmware fixes teh calender sync bug i noted below.  
 ##I bought this a couple of months ago after researching all the reviews comparing with the iPod mini. 
@@ -308,7 +308,7 @@ case[+3] ##A distinct IPod relation is evident with white colored cables, power 
 design[+3] ##I do give create to Creative for their attractive design.    
 functionality[+2] ##Creative has put a lot of effort into making this player appeal to those true geeks that search for coolness and functionality in electronic devices. 
 player[+1][p]##Creative was defiantly giving the IPod a run for their money with this device.  
-player[+][p][cs]##It makes the Nomad I purchase feel and look like junk.  
+player[+1][p][cs]##It makes the Nomad I purchase feel and look like junk.  
 quality[+2] ##Everything shines of quality.  
 player[+1][cs] ##I was more excited about this player upon opening than I was about the Nomad.  
 ##First I removed each piece and laid them out on my coffee table.  
@@ -328,7 +328,7 @@ headphones[+2] ##The Earbuds are great headphones as good as my AGK Studio 240, 
 ##Creative says that the software engine for this MP3 is the best hands down.  
 ##I believe them.  
 ##Overall this play is my introduction into the market.  
-Zen[+][s]##The Zen was an impressive purchase and I would highly recommend it to anyone using Napster.  
+Zen[+1][s]##The Zen was an impressive purchase and I would highly recommend it to anyone using Napster.  
 ##If you're an itunes person then no one could argue against an IPod.      
 [t]
 ##I got my Zen Micro last week. 
@@ -340,14 +340,14 @@ sound[+3] ##The sound is amazing.
 menu[+2] ##The menu is easy to use and understand. 
 touchpad controls[+2] ##I love the touchpade controls. 
 touchpad controls[+2][p] ##They're easy to use. 
-radio[+2], voice recording[2] ##The radio and voice recording are nice. 
+radio[+2], voice recording[+2] ##The radio and voice recording are nice. 
 headphones[+2] ##The earbud headphones are really nice. 
 batterylife[+2] ##The battery has a long life. 
 battery replacement[+2] ##It's rechargable and supposedly easy to replace though I haven't had to do it yet of course. 
 file transfer/rip software[+2] ##The file ripping/transfering software that comes with the player is easy to use. 
 file transfer[+2][p][cc] ##It's faster than WMP. 
 player[+1] ##So far I have no complaints with this player. 
-player[+][s] ##If anyone is thinkning of getting an ipod mini, forget it and go with this player. 
+player[+1][s] ##If anyone is thinkning of getting an ipod mini, forget it and go with this player. 
 price[+2], storage[+2], size[+2] ##It's cheaper, holds more songs and is smaller.      
 [t]
 ##If you are like me who wants move to the next phase of portable audio from conventional portable CD players I hope you find this usefull.   
@@ -378,7 +378,7 @@ sound[+3] ##Excellent sound I mean the player has juice.
 ##I dont use the headphones that come with it instead I use Bose Triport headphones. 
 ##The player has great potential (ur experiance may differ based on your headphones). 
 bass[+3], treble[+3] ##The bass treble the sound detail is awsome. 
-player[+][cc] ##I compared it to other CD players (Two models of Panasonic, Rio & samsung) and they were no way even near Zen Micro.  
+player[+1][cc] ##I compared it to other CD players (Two models of Panasonic, Rio & samsung) and they were no way even near Zen Micro.  
 look[+2] ##Looks and shape: I have a black one and the first time I charged it and switched it on jeez the blue light looked so cool. 
 size[+2] ##Its compact and has rounded edges. 
 size[+1] ##Fits well in hand in trouser pockets.   
@@ -400,11 +400,11 @@ Zen micro[+2] ##While I have not had the "privilege", as many call it, of owning
 ##Nevertheless, I still get shirked when someone out of ignorance states "But it's not an IPod!" or "Never heard of it, I'll go with the IPod". 
 ##_  About the hype:  I must applaud Creative for their restraint.  
 player[+2] ##By focusing exclusively on quality rather than excessive marketing, they have introduced a player that can look the Ipod straight in the eye and not flinch.  
-Zen micro[+][s] ##While I'm not too keen on their customer service (none of the products I have from Creative have given me issues), I can definitely recommend the Zen Micro for the simple fact that it does exactly what it is supposed to do and more...without needing any of the extra hype except word of mouth.  
+Zen micro[+1][s] ##While I'm not too keen on their customer service (none of the products I have from Creative have given me issues), I can definitely recommend the Zen Micro for the simple fact that it does exactly what it is supposed to do and more...without needing any of the extra hype except word of mouth.  
 ##Apple, on the other hand, seems to have engaged in a blind marketing strategy that seeks to obliterate competition through utter abuse of marketing channels and un-orthodox "free player" schemes that just seem to pimp the product without pimping the features.  
 ##The result, while naturally encompassing the acquisition of greater market share, is a mediocre product that stands out sorely in terms of quality and value when compared in a virtual vacuum to its competitors.  
 look[+2][u], size[+2], battery life[+2] ##About the product:  The Zen Micro is a sleek, stylish device that caters not just to "hip" youngsters but to people of all walks of life who like to listen on the go without having to worry frequently about battery life, size, or the "awkward" factor.  
-size[+2], design{+3], ##It fits comfortably in my shirt pocket and while very well-designed, doesn't look to ostentatious while I'm walking around with it.  
+size[+2], design[+3], ##It fits comfortably in my shirt pocket and while very well-designed, doesn't look to ostentatious while I'm walking around with it.  
 interface[+1] ##The interface, while a bit confusing at first, is very easy to navigate after about 15 minutes.  
 battery life[+3] ##Battery life is exceptional, lasting longer than the 8-10 hours that seem reasonable with most music players on the market.  
 file transfer[+2][u], software[+2] ##Transferring files couldn't be easier thanks to the included software bundle.  
@@ -413,9 +413,9 @@ design[+2], features[+2] ##All-in-all, Creative has definitely come up with a wi
 configuration[-1][u] ##P.S.  The only snag I encountered while initially configuring the device was trying to hook up the Micro to a front USB port.  The bus for the front port on my motherboard did not have enough power; after connecting it to the rear ports, it works perfectly.     
 [t]
 look[+2], player[-2][p] ##This device looks pretty nice but it's really not very competitive.  
-player[-][cc] ##The iPod mini is smaller and sexier, albeit limited in supported formats and the Rio Karma is a far better value.  
-storage[-][cc], format[-2][cc] ##The karma is only $5 more, it's small, had a 20 gig drive and supports more formats including ogg.  
-look[+][cc], interface[-2] ##The karma doesn't look as sexy but it's interface is very efficiently designed.  
+player[-1][cc] ##The iPod mini is smaller and sexier, albeit limited in supported formats and the Rio Karma is a far better value.  
+storage[-1][cc], format[-2][cc] ##The karma is only $5 more, it's small, had a 20 gig drive and supports more formats including ogg.  
+look[+1][cc], interface[-2] ##The karma doesn't look as sexy but it's interface is very efficiently designed.  
 ##In fact, it's much better than the iPod in that regard. 
 ##The karma also has a very long battery life.  
 ##Having owned both the karma and other Creative Lab products (including Zen) I would have to say the Karma also sounds better.  
@@ -457,7 +457,7 @@ functioning[-3] ##It had issues right off the bat, with freezing up, staying in 
 touch pad[-2], access[-2] ##The touch-pad would be a great thing if it worked well, and as I never had issues getting songs transferred to the player, I did have problems accessing them from the player.   
 make[-3][u] ##Many other reviewers are mentioning that they have had no problems at all> I would say that the main problem is that this player is just not made very well. 
 player[-3][u] ##It is the 'first generation' of the player, and while I still agree that it is a great alternative to the iPod, I think there are many others that would be a much better value for your buck.   
-player[-][s] ##If someone asked me flat out, i'd say to go woth something else.      
+player[-1][s] ##If someone asked me flat out, i'd say to go woth something else.      
 [t]
 ##After heavy duty research and reading reviews, I decided to plunge into the MP3 player circus and got myself the Zen Micro. 
 ##Why not join the iPodders like the rest of the world? 
@@ -489,10 +489,10 @@ storage[-1][u] ##It's perfect for those who aren't planning on storing tons of m
 music transfer[+1] ##Transferring music is a breeze. I don't subscribe to music services, but as mentioned on other reviews, Micro allows you to subscribe to services OTHER than iTunes. 
 features[+2], sound quality[+2] ##It may not top the iPod Mini, but it's definitely an alternative if you also want the extra features and good sound quality.  
 design[+2], size[+2][u], comfort[+2][u], look[+2] ##Strong Points: - Design: small, comfortable, curved, and stylish. 
-variety of colours[+2] - Colors: 10 variety of HOT colors made it difficult to choose from. 
+variety of colours[+2] ## 10 variety of HOT colors made it difficult to choose from. 
 sound[+3] ##You don't need to cough up an extra couple bucks for a "special edition" to get black! - Sound: Awesome! - Batteries: removable/replaceable. 
 audio formats[+2] ##- Audio Formats: supports both MP3, WMA... And yeah, WAV too.  
-touch pad[-2], design[-1], volume control[-1] Weak Points: - Touch Pad: design could be better - Volume Control: controlled through the vertical strip, but purchasing a headphone with built-in volume control will do the trick. 
+touch pad[-2], design[-1], volume control[-1] ## Weak Points: - Touch Pad: design could be better - Volume Control: controlled through the vertical strip, but purchasing a headphone with built-in volume control will do the trick. 
 FM reception[-2][u] ##- Radio Quality: weak reception     
 [t]
 look[-3][u], storage[+1] ##It's nice that the Zen Micro has bells and whistles like FM (but where's AM???) and voice recording, and 20% more storage than "the other" mini MP3 player, but why is it so (...)ugly?  
@@ -506,7 +506,7 @@ software[-3][p] ##You have to wonder why Creative can't get this right.
 look[+2], controls[-3], touchpad[-2][u] ##Looks nice but the conrols are awkward and the entire front is touch sensitive.  
 storage[+2][u] ##You do get 1 more GB than an iPod mini.  
 screen review[-2] ##Screen review could be better.  
-screen review[-][cc] ##Apple stil does it better but needs to come out with a 5 gig mini.     
+screen review[-1][cc] ##Apple stil does it better but needs to come out with a 5 gig mini.     
 [t]
 player[+3][p] ##This product is amazing and better than the Ipod you can get at the same price. 
 storage[+1], cost[+1] ##the 4G Ipod costs the same as this 5G Zen Micro. 
@@ -515,7 +515,7 @@ design[+3] ##Creative did an awesome job with the design.
 headphones[+2], extra accessories[+2][u] ##The headphones have great sound and durability and mine came with some extras when I bought it (a stand, a belt hook, charger) that I know doesn't come with every one. 
 player[+2][p] ##I have the black one and adore it. 
 look[+2], background light[+3] ##It looks nice and sleek and the blue background light looks awesome against the black. 
-touchpad[-1][u] The touch buttons do take a little getting used to and I don't like how the scroll button is the same button used as an "enter" key, but you get used to it and it isn't a big deal. 
+touchpad[-1][u] ## The touch buttons do take a little getting used to and I don't like how the scroll button is the same button used as an "enter" key, but you get used to it and it isn't a big deal. 
 ##I take mine everywhere.     
 [t]
 size[+1], style[+1] ##I bought my Zen Micro three months ago mainly because I preferred the size and style to the iPod mini. 
@@ -530,14 +530,14 @@ sync to windows media player[+1] ##One of my favorite features about the player 
 speed[+2][u], look[+2] ##Its just as fast as the included Creative software, but much less invasive, and overall better looking. 
 ##With WMP10, you don't need to install any software other than the driver, which makes using multiple computers fairly simple.  
 touchpad[+2] ##The touchpad is great once you get used to it, and I much prefer it to standard buttons or scroll wheels (as on the Dell DJ for example). 
-touchpad[2][p] ##They are sensitive and accurate (perhaps too accurate, it senses through t-shirt cloth, but the touchpad can be locked), but easy to clean, unlike buttons. 
+touchpad[+2][p] ##They are sensitive and accurate (perhaps too accurate, it senses through t-shirt cloth, but the touchpad can be locked), but easy to clean, unlike buttons. 
 touchpad[+1] ##Also, the touchpad seems to be waterproof to some degree.  
 FM reception[-2] ##The FM radio's reception isn't spectacular, but it will pick up the most powerful stations in any given metro area. 
 radio record[+1] ##Its ability to record radio is useful as well, but would have been moreso if it could be preset.  
 look[+3], feel[+3], sound[+3] ##The player looks great, feels great, and sounds great. 
 durability[+2] ##So far it has been very durable (other than the little pads on the earbuds), but those aren't really necessary as I find them comfortable on their own. 
 earbuds[+2][p][cc] ##They also sound excellent compared to other earbuds including retail sets like Panasonics and Sennheisers. 
-built[+3][u] I've dropped the device several times onto hard surfaces, and it still works flawlessly.     
+built[+3][u] ##I've dropped the device several times onto hard surfaces, and it still works flawlessly.     
 [t]
 ##Every few years I crawl out into the electronic world, in search of a new MP3 player to replace the horribly inadequate one I currently own. 
 Zen micro[+2] ##This year, it seems that I choose my timing perfectly, having discovered the awesome device that is the Zen Micro.  
@@ -563,10 +563,10 @@ response speed[-1][u] ##Another thing I don't like is that some of the features 
 ##These are limited to the voice recorder, address book, and such. 
 ##I will be using the player 99% of the time as an MP3 device, so these small pauses are entirely bearable, for the added features just to be available. 
 ##Really that's all I can find wrong with it, it took some major bouncing around to get a song to skip (there is a hard drive within), and I don't forsee jogging (wich I plan to do with it tonight) to cause any problems whatsoever (if it does, I'll update this).  
-plaeyr[+][s] ##That's it for now, what are you doing still reading this, click the "Add to Cart" button already!      
+plaeyr[+1][s] ##That's it for now, what are you doing still reading this, click the "Add to Cart" button already!      
 [t]
 ##UPDATE March 3rd, 2005: I bought my Dark Blue Zen Micro back in November, when they first came out. 
-features[+][cc], sound quality[+2], music source support[+2] ##Right out of the box, I loved it, better features than the Ipod, great sound quality and no limitations on what music sources I can use. 
+features[+1][cc], sound quality[+2], music source support[+2] ##Right out of the box, I loved it, better features than the Ipod, great sound quality and no limitations on what music sources I can use. 
 ##I loaded my whole CD collection on it and took it everywhere, even at work. 
 player[+3][p] ##So, I was one who was ready to give it 5 stars with no complaints at all. 
 ##Then last week, my player just quit working, period. 
@@ -576,7 +576,7 @@ working[-2] ##Well, I got my second player, and right out of the box it wasn't w
 ##rvice, they said I should send it in for repairs.  
 ##I loved the Zen Micro, and thus it pains me to say this, but I have a hard time recommending something, when I've had two of them break on me in such a short time of owning them. 
 quality[-2], reliability[-2] ##They obviously have quality and reliability problems. 
-player[-][s] ##They have a good concept here, and I normally expect a lot better quality from Creative, so maybe they will do better with the next gen version, but for now I say buyer beware.  
+player[-1][s] ##They have a good concept here, and I normally expect a lot better quality from Creative, so maybe they will do better with the next gen version, but for now I say buyer beware.  
 player[+2][p] ##ORIGINAL REVIEW December 2004 I'm sorry to read about other people having problems with their Zen Micro, but mine has worked great! 
 player[+2][p] ##This is my first MP3 player and I am so impressed with what such a small device can do.  
 sound[+3], rip[+2] ##I have ripped over 100 songs from my CD collection and it was so easy and fast, and they all sound great.  
@@ -593,7 +593,7 @@ bag[-3] ##The little bag it comes with is cheap and useless.
 bag[-2] ##It barely holds anything and mine just puts a bunch of thread fuzzies all over the player, because the bag is cheap and seems to be coming apart.  
 ##I threw it away.  
 ##Those are minor complaints though.  
-player[+][s] ##I love my dark blue zen micro and would definitely recommend it.  
+player[+1][s] ##I love my dark blue zen micro and would definitely recommend it.  
 ##Soon I will have every CD song I care about from my collection to carry around with me.  
 ##Amazing.     
 [t]
@@ -606,7 +606,7 @@ features[+2] ##The FM tuner, the 5G of storage, and the removable disk are all g
 ##You can then hook up the Zen via USB to any Win2K or later computer and use that partition to store data files.  
 ##Any audio files in this area can't be played by the player.  
 ##I primarily got the Zen to use for band practice, so I use the removable disk to store lyrics and sheet music.  
-look[2] ##The fit and finish of the product is first-rate.  
+look[+2] ##The fit and finish of the product is first-rate.  
 ##The slow throbbing glow that it emits during charging is cool too.  
 interface[-1] ##On the downside, I think the interface takes some getting used to and the Zen software !
 software[-2][p] ##is not as intuitive as I would like.  
@@ -624,7 +624,7 @@ player[+2][p] ##The more I use it and figure out how to do things, the more I li
 ##Are you feeling lucky today? 
 ##Who knows -- you may avoid a migraine altogether.  
 sound quality[+3] ##Before you run out and buy an iPod, understand something: there are REASONS the Zen is worth encountering this kind of hassle, principally excellent (for MP3) sound quality.  
-headphones[+][cc] ##The supplied headphones are hands-down better than the mediocre iPod buds. 
+headphones[+1][cc] ##The supplied headphones are hands-down better than the mediocre iPod buds. 
 ##That said, you can get more of what the Zen is capable of by donating them to your local iPod person (they're white) and getting a pair of $60-$80 aftermarket headphones. 
 ##I'm getting stunningly good resul!
 ##ts with Sennheiser HD-497 phones. 
@@ -639,10 +639,8 @@ touchpad[-2] ##The touch pad is over-sensitive, and is adjustable to only slight
 ##You quickly learn to brush your thumb ever so lightly over its surface.  
 ##To minimize any frustration (and the odds that you may return a usable unit), keep the following in mind:  1. While your unit is!
 ##unboxed and charging up, visit the Creative website for necessary firmware and/or driver upgrades, especially if you're planning to use a service like Napster. ##Keep in mind the required upgrade may be a beta version (mine was).  
-##2. 
-##Some upgrades are needed for the Micro to work properly with the Windows XP operating system and Media Player 10.  
-##3. 
-You may need to briefly disable various spam blockers, cookie swatters, and antivirus programs (I know, I know -- get offline first). 
+##2. Some upgrades are needed for the Micro to work properly with the Windows XP operating system and Media Player 10.  
+##3. You may need to briefly disable various spam blockers, cookie swatters, and antivirus programs (I know, I know -- get offline first). 
 ##My gatekeeper programs kept fixes away a few times until I got wise to it.  
 sound quality[+3], music subscription service[+2] ##Bottom line: If you value excellent sound quality and the ability to use music subscription services, and are willing to deal with the possibility (not the certainty) of setup gremlins, by all means get the Zen Micro.     
 [t]
@@ -661,7 +659,7 @@ Zen micro[+2] ##The Zen Micro is near perfect.
 ##I bought my Zen Micro last december as a christmas gift to myself, save for a few software issues, I couldn't be happier with my purhcase.   
 ##I've owned this player for nine months now and it's been on 5 cross country trips, one trans-atlantic honeymoon, and numerous roadtrips. 
 ##It's been in my pocket, in my car, and in my bag in 20 inches of snow and 100 degree summers. 
-#3It's been dropped, shuffled, kicked, and Lumbered. 
+##3It's been dropped, shuffled, kicked, and Lumbered. 
 built[+3][u] ##It's still alive, still kicking, and still playing.   
 ##I've never owned an Ipod, so this won't be a which one is better review.   
 ##All of my files are mp3 or wma, Windows Media Player is my primary music suite, i use it to burn, play, rip, and sync.
@@ -684,7 +682,7 @@ bag[+1] ##White earbuds ( i replaced those with some shure headphones, big diffe
 player[+2][p] ##best in class. 
 player[+2][p] ##It gives you the most bang for your buck, period.   
 quality[+2] ##Creative has been making computer sound equipment for decades and with the zen micro it finally has something with enough quality and, yes, charm to win a nice size of the digital player pie.   
-player[+][s] ##Pick your favorite color and buy it.      
+player[+1][s] ##Pick your favorite color and buy it.      
 [t]
 ##Alot of people seem to compare any music player to an Ipod. 
 ##Comments such as "it's stylish" or "it looks cool" or "everyone has it" don't nesseseraly make something good.
@@ -701,7 +699,7 @@ design[+2], color[+2] ##Pros The Design is very nice, and the colors are too.
 features[+2] ##It also has tons more features then previous creative products, and most of them are very useful such as the ability to custimize the main menu to show the stuff you want, not the default items (creativelabs.com for more on that).  
 battery[+1] ##The battery is also convenient, but could have been better, such as the Zen Touch's battery (but at least this one is removable).    
 storage[-1][u] ##Verdict:  Had I not needed something with a tad bit more space, I consider this player fair game. 
-player[+][s] ##If you don't mind all the buttons being touch sensitive, I'd recomment buying it to try out, and also buy an extra 2 year warrenty for it (there are some offered here, for about $15 dollors I think).  
+player[+1][s] ##If you don't mind all the buttons being touch sensitive, I'd recomment buying it to try out, and also buy an extra 2 year warrenty for it (there are some offered here, for about $15 dollors I think).  
 ##Closing: For everyone who is shallow and buys the Ipod only becouse of it's looks (i'm not saying it's necissarily bad), here's a joke: What did the Pencil Sharpener say to t!
 ##he Pencil? 
 ##Stopping going in circles and get to the point. 
@@ -737,7 +735,7 @@ users guide[-1] ##-User's guide doesn't cover a lot of important info that is co
 ##er compatibility, you can't downgrade the firmware.
 heat[-1][u] ##) -Can't be left in the car... it immediately shuts down with an overheating error if left in a hot car for too long. 
 size[+1][u] ##But since it's so small, it isn't a big deal to bring it with me.  
-player[+][p][s] ##Overall though, i'm very happy with it and highly recommend it to folks looking for a mp3 player, even if it is to pretend your not a braindead consumer giving into the marketing hype of the iPod. ;)     
+player[+1][p][s] ##Overall though, i'm very happy with it and highly recommend it to folks looking for a mp3 player, even if it is to pretend your not a braindead consumer giving into the marketing hype of the iPod. ;)     
 [t]
 ##I have been researching MP3 players for the last two weeks.  
 ##Of course the first one I decided to research first was the Apple iPod.  
@@ -818,7 +816,7 @@ Outlook compatibility[+2] ##Better for the Zen Micro is Outlook compatibility.
 ##Well, if size matters, and you like the idea of a lime-green or bright yellow device, then I'd have to go with a Creative Zen Micro.  
 software[+3], tech support[+2], accessories[+2] ##Creative has excellent music software, a very responsive tech support group (they are quick on firmware updates, and make them publicly available), and usually a good array of accessories.  
 additional accesories[+1] ##The Zen Micro is no exception: in addition to the case, it comes with a neck strap, and has all of the necessary cables for syncing and charging.  
-extra battery{+2] ##The extra spare battery is just a neat bonus.  
+extra battery[+2] ##The extra spare battery is just a neat bonus.  
 player[+2] ##If I could, I'd trade-up on my Creative Muvo2 and snag a Zen Micro tomorrow.  
 ##**** I gave up a ton of positive reviews to add this addendum.  
 ##I do not work for Creative; I had a chance to play with a review copy in-depth, as others have (See Engadget, Gizmodo, or c|net as examples).  
@@ -853,7 +851,7 @@ battery life[-2] ##The battery, as others have said, also seems weaker than Crea
 ##Try an additional *six* hours, methinks.  
 creative[-2][u] ##Still, that's enough time that I'm still satisfied, if a bit grouchy with Creative's overhyped promises.    
 headphones[+1] ##Have not had any issues with the headphones or fragility.  
-player[+1][u] As I said, I don't regret the purchase at all.  
+player[+1][u] ##As I said, I don't regret the purchase at all.  
 ##To use a bas!
 Zen micro[+2] ##eball metaphor: I was hoping Creative hit a home run here, and I think the Zen Micro is more like a stand-up double.  
 player[-1][u] ##Respectable, solid, but not awe-inspiring.          
@@ -864,7 +862,7 @@ player[-1][u] ##Respectable, solid, but not awe-inspiring.
 ##Tall order, eh? 
 sound quality[+2][p], battery life[+2][p], capacity[+2][p], look[+2][p], construction[+2][p], price[+2][p], compatibility[+1][p] ##Actually, the Creative Zen Micro solves all that.  
 sound quality[+3] ##Sound quality? Phenomenal. 
-sound quality[+][cc], earbuds[+2] ##unarguably better than Apple's, and nice earbuds to boot.  
+sound quality[+1][cc], earbuds[+2] ##unarguably better than Apple's, and nice earbuds to boot.  
 ##Looks? 
 ##Let's just say it's no coincidence I put "Foxy Lady" on there. 
 variety of colors[+3][u] ##Your choice of ten colors in a beatiful package.  
@@ -879,7 +877,7 @@ construction[+3][u] ##No skips, and it hasn't faltered once (despite your inevit
 compatibility[+3] ##Flawless. 
 ##They've partnered with Napster to give you a! free month of the subscription service (read: all the music you want free for thirty days, when you can cancel with all your music safely hidden away.
 play WMA[+2] ##) No locked-in proprietary business like Apple; this baby plays WMAs too.  
-voice record[+2], player[+][cc] ##The voice recorder is a beautiful add-on; not even necessary, but just an example of why Apple just wants your money and Creative Labs wants to make a better player. 
+voice record[+2], player[+1][cc] ##The voice recorder is a beautiful add-on; not even necessary, but just an example of why Apple just wants your money and Creative Labs wants to make a better player. 
 sound[+3] ##Gets nice sound too. 
 FM tuner[+1] ##The FM tuner is just a little spare icing on the cake.  
 ##And the price? 
@@ -929,7 +927,7 @@ working[-3][u] ##So I took out the battery and put it back in again, only to fin
 sound[-3] ##I had the second one for less than two weeks when I noticed a rattling/humming/buzzing sound while music was played.  
 ##I've tried different headphones, upgrading firmware, using different files and nothing helps.  
 customer service[-3] ##I sent Creative customer service 3 emails in which they did not help me one bit and don't seem to even want to help.  
-I've heard many good reviews of this product and I wonder if maybe I just had bad luck.  
+##I've heard many good reviews of this product and I wonder if maybe I just had bad luck.  
 design[+2] ##It was a good player when it worked and I loved the design.  
 player[-3][p] ##It's too bad, though, that !
 ##I don't want to keep testing my luck.  
@@ -971,7 +969,7 @@ touch screen[-1] ##The touch sreen navigation will take a little getting used to
 FM reception[-2][u] ##just too numerous to list: FM radio, which has weak reception, but at least it there, and a microphone, to name just two. 
 touchpad light[+2][u] ##Oh, and another is the cool "halo" light that surrounds the touch pad, and light's up when you touch the screen, and how the light glows when the Zen is connected to the computer. 
 design[-2] ##But, the Creative Zen Micro is plagued by a serious, serious stupid and elemenatary design flaw, and I'm going to tell you what it is...But first, two more things about this piece of garbage that's so great and could've made it a potenial IPOD killer.         
-size[+][cc], storage[+][u][cc] ##One: It's size: It's smaller than the Ipod Mini, and holds more music (5GB to the IPOD mini's 4GBs). 
+size[+1][cc], storage[+1][u][cc] ##One: It's size: It's smaller than the Ipod Mini, and holds more music (5GB to the IPOD mini's 4GBs). 
 ##It's smaller, in most cases than the palm of your hand, and is ergonomically curved. 
 ##I loved this thing. 
 ##I've had Dell Pocket DJ owners, IPOD mini AND Shuffle owners marvel at this thing. 
@@ -1003,7 +1001,7 @@ Zen micro[-3] ##The Creative Zen Micro is a Zen Micro killer, not an Ipod killer
 ##Do your research; check !
 ##out the bulletin boards.     
 [t]
-storage[-][cc] ##Why would anyone buy this when you can get a 20GB iPod that will hold 4 times the number of songs (and even MORE if AAC encoding is used) for the same price???  
+storage[-1][cc] ##Why would anyone buy this when you can get a 20GB iPod that will hold 4 times the number of songs (and even MORE if AAC encoding is used) for the same price???  
 ##In addition , iPods can be used as portable hard drives and can display your calendars and contact info.      
 [t]
 audio quality[+3], ease of use[+3], features[+3] ##This player is fantastic in terms of audio quality, ease of use, and features. 
@@ -1013,7 +1011,7 @@ usage with subscription service[-2][u] ##To use the Creative Zen player with a s
 ##At the time of this writing, that firmware is a "beta release." 
 set up[-1] ##I haven't seen any problems yet, but if you don't like to tinker a bit, this player can be a little challenging to set up.  
 ##2. 
-transfer speed[-2] #Right now, the Creative software transfers subscription music files very slowly. 
+transfer speed[-2] ##Right now, the Creative software transfers subscription music files very slowly. 
 ##It makes USB 2.0 feel like USB 1.1. 
 subscription WMA[-1] ##This doesn't affect standard MP3 files - just subscription WMA files. 
 ##The solution? 
@@ -1039,7 +1037,7 @@ creative[+3] ##I have owned some kind of Creative audio product since 1993 and h
 ##Of course, some were better than others, and I probably could have gotten a better sound card from another company at some point.  
 player[+3][p] ##The main issue now is that this new Zen Micro seems to be the best on the market at least temporarily.  
 interface[+2][cc], storage[+2][cc], battery life[+2][cc] ##It beats Apple on the storage space, it beats apple on the removable battery (and batter life), and I personally like its interface more than the Ipod scroll wheel.  
-audio quality[+][cc] ##Further, the tech specs suggest that it has better audio quality than the Ipod.  
+audio quality[+1][cc] ##Further, the tech specs suggest that it has better audio quality than the Ipod.  
 ##It may be that the next Creative product is complete junk, but you should make product decisions based on product attributes NOW, not based on a halo effect of an idealized company (Apple) or other pointless loyalties.       
 [t]	 
 player[+3][p] ##I have had several MP3 players over the past few years, and have to say that this by far is the best that I've owned. 
