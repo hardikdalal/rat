@@ -8,8 +8,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class TextReviewHandler {
-	public static ArrayList parseXML(String fileName) {
-		ArrayList reviewArray = new ArrayList();
+	public static ArrayList<Review> parseXML(String fileName) {
+		ArrayList<Review> reviewArray = new ArrayList<Review>();
 		try {
 			
 			DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
@@ -54,12 +54,12 @@ public class TextReviewHandler {
 		}		
 		return reviewArray;
 	}	
-	public static void parseTextFile(String fileName) {
+	public static void parseTextFile(String fileName) {		
 		ArrayList<String> reviewList = new ArrayList<String>();
 		Map<String,Integer> aspectMap = new HashMap<String,Integer>();
 		BufferedReader br = null;
-		try {
-			br = new BufferedReader(new FileReader("resources/dataset/"+fileName)); 
+		try {			
+			br = new BufferedReader(new FileReader(PropertiesFactory.getPropertyValue("reviewfilename"))); 
 			String line = "";
 			String regex = "\\[.\\d\\]";
 			Pattern pattern = Pattern.compile(regex);
@@ -101,7 +101,7 @@ public class TextReviewHandler {
 				}
 			}
 			br.close();			
-			File reviewFileName = new File(GlobalVars.reviewFileName);
+			File reviewFileName = new File(PropertiesFactory.getPropertyValue("reviewfilename"));
 			Files.deleteIfExists(reviewFileName.toPath());
 			reviewFileName.createNewFile();
 			PrintWriter writer = new PrintWriter(reviewFileName, "UTF-8");
@@ -109,7 +109,7 @@ public class TextReviewHandler {
 				writer.println(reviewItem);				
 			}			
 			writer.close();
-			writer = new PrintWriter(GlobalVars.goldStandardAspectsFileName, "UTF-8");			
+			writer = new PrintWriter(PropertiesFactory.getPropertyValue("goldstandardaspectsfilename"), "UTF-8");			
 			for(Map.Entry<String,Integer> entry : aspectMap.entrySet()) {				
 				writer.println(entry.getKey()+","+entry.getValue());				
 			}			

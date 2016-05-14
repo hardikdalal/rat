@@ -34,7 +34,7 @@ public class StanfordDependencyParser {
 	
 	private static void parseText(String fileName) {
 				
-		LexicalizedParser lp = LexicalizedParser.loadModel(GlobalVars.parserModel);		
+		LexicalizedParser lp = LexicalizedParser.loadModel(PropertiesFactory.getPropertyValue("parsermodel"));		
 		
 		// This option shows loading, sentence-segmenting and tokenizing a file using DocumentPreprocessor.		
 		TreebankLanguagePack tlp = lp.treebankLanguagePack(); // a PennTreebankLanguagePack for English
@@ -268,20 +268,20 @@ public class StanfordDependencyParser {
 		
 		PrintWriter writer = null;
 		try	{			
-			writer = new PrintWriter(GlobalVars.aspectsFileName, "UTF-8");			
+			writer = new PrintWriter(PropertiesFactory.getPropertyValue("aspectsfilename"), "UTF-8");			
 			for(Map.Entry<String,Integer> term : aspectDict.entrySet()) {
 				writer.println(term.getKey()+","+String.valueOf(term.getValue()));
 			}
 			writer.close();
 			System.out.println("Aspect terms written to file.");
-			writer = new PrintWriter(GlobalVars.opinionsFileName, "UTF-8");			
+			writer = new PrintWriter(PropertiesFactory.getPropertyValue("opinionsfilename"), "UTF-8");			
 			for(Map.Entry<String,Integer>  opinion : opinionDict.entrySet()) {
 				writer.println(opinion.getKey()+ "," + String.valueOf(opinion.getValue()));
 			}
 			writer.close();
 			System.out.println("Opinion words written to file.");
 						
-			writer = new PrintWriter(GlobalVars.otPairsFileName, "UTF-8");			
+			writer = new PrintWriter(PropertiesFactory.getPropertyValue("otpairsfilename"), "UTF-8");			
 			for(Map.Entry<String,Map<String,Integer>>  otPair : otMap.entrySet()) {
 				StringBuilder opinionStr = new StringBuilder();				
 				Map<String,Integer> opinionMap = otPair.getValue();				

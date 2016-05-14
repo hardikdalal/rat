@@ -11,7 +11,7 @@ public class SWN3 {
 		BufferedReader br = null;
 		PrintWriter writer = null;
 		try {
-			br = new BufferedReader(new FileReader(GlobalVars.filteredOTPairsFileName));
+			br = new BufferedReader(new FileReader(PropertiesFactory.getPropertyValue("filteredotpairsfilename")));
 			String line = "";
 			Set<String> opinions = new HashSet<String>();
 			while ((line = br.readLine()) != null) {
@@ -27,7 +27,7 @@ public class SWN3 {
 			br.close();			
 			
 			Map<String,Double> sentiMap = new HashMap<String,Double>();			
-			br = new BufferedReader(new FileReader(GlobalVars.SWNFileName)); 
+			br = new BufferedReader(new FileReader(PropertiesFactory.getPropertyValue("swnfilename"))); 
 			line = "";
 			while ((line = br.readLine()) != null) {
 				String rowValues[] = line.split("\t");
@@ -56,7 +56,7 @@ public class SWN3 {
 				}
 				summaryMap.put(otPair.getKey(),score);
 			}
-			writer = new PrintWriter(GlobalVars.summaryFileName, "UTF-8");
+			writer = new PrintWriter(PropertiesFactory.getPropertyValue("summaryfilename"), "UTF-8");
 			writer.println("Rank\tAspect -> Sentiment Score");
 			int counter = 0;
 			for(Map.Entry<String,Double> entry : summaryMap.entrySet()) {
@@ -64,7 +64,7 @@ public class SWN3 {
 				writer.println(String.valueOf(counter)+"\t\t"+entry.getKey()+" -> "+entry.getValue());
 			}
 			writer.close();
-			System.out.println("Refer "+GlobalVars.summaryFileName+" for results");
+			System.out.println("Refer "+PropertiesFactory.getPropertyValue("summaryfilename")+" for results");
 		}
 		catch(Exception e) {
 			System.err.println(e.getClass().getName() + ": " + e.getMessage() );				

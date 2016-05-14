@@ -14,7 +14,7 @@ public class Filter {
 		PrintWriter writer = null;
 		Map<String,Integer> aspectsMap = new HashMap<String,Integer>();
 		try {
-			br = new BufferedReader(new FileReader(GlobalVars.aspectsFileName)); 
+			br = new BufferedReader(new FileReader(PropertiesFactory.getPropertyValue("aspectsfilename"))); 
 			String line = "";
 			
 			while ((line = br.readLine()) != null) {				
@@ -25,7 +25,7 @@ public class Filter {
 			
 			LinkedHashMap sortedAspectsMap = sortHashMapByValuesD(aspectsMap);
 			
-			writer = new PrintWriter(GlobalVars.sortedAspectsFileName, "UTF-8");
+			writer = new PrintWriter(PropertiesFactory.getPropertyValue("sortedaspectsfilename"), "UTF-8");
 			Set<Map.Entry> entries = sortedAspectsMap.entrySet();
 			for(Map.Entry entry : entries) {
 				writer.println(entry.getKey()+","+String.valueOf(entry.getValue()));
@@ -86,7 +86,7 @@ public class Filter {
 		LinkedHashMap<String,Integer> sortedAspectsMap = new LinkedHashMap<String,Integer>();
 		Map<String,Map<String,Integer>> otMap = new HashMap<String,Map<String,Integer>>();
 		try {
-			br = new BufferedReader(new FileReader(GlobalVars.sortedAspectsFileName)); 
+			br = new BufferedReader(new FileReader(PropertiesFactory.getPropertyValue("sortedaspectsfilename"))); 
 			String line = "";
 			int counter = 1;
 			while ((line = br.readLine()) != null && counter <= top) {
@@ -96,7 +96,7 @@ public class Filter {
 			}
 			br.close();
 			
-			br = new BufferedReader(new FileReader(GlobalVars.otPairsFileName));			
+			br = new BufferedReader(new FileReader(PropertiesFactory.getPropertyValue("otpairsfilename")));			
 			line = "";
 			while ((line = br.readLine()) != null) {
 				String pair[] = line.split(",");
@@ -111,7 +111,7 @@ public class Filter {
 			}
 			br.close();
 			
-			writer = new PrintWriter(GlobalVars.filteredOTPairsFileName, "UTF-8");			
+			writer = new PrintWriter(PropertiesFactory.getPropertyValue("filteredotpairsfilename"), "UTF-8");			
 			for(Map.Entry<String,Integer> entry : sortedAspectsMap.entrySet()) {
 				StringBuilder opinionStr = new StringBuilder();				
 				Map<String,Integer> opinionMap = otMap.get(entry.getKey());

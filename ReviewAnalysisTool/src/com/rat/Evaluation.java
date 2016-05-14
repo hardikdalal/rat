@@ -55,7 +55,7 @@ public class Evaluation {
 		PrintWriter writer = null;
 		Map<String,Integer> aspectsMap = new HashMap<String,Integer>();
 		try {
-			br = new BufferedReader(new FileReader(GlobalVars.goldStandardAspectsFileName)); 
+			br = new BufferedReader(new FileReader(PropertiesFactory.getPropertyValue("goldstandardaspectsfilename"))); 
 			String line = "";
 			
 			while ((line = br.readLine()) != null) {				
@@ -66,7 +66,7 @@ public class Evaluation {
 			
 			LinkedHashMap sortedAspectsMap = sortHashMapByValuesD(aspectsMap);
 			
-			writer = new PrintWriter(GlobalVars.sortedGoldStandardAspectsFileName, "UTF-8");
+			writer = new PrintWriter(PropertiesFactory.getPropertyValue("sortedgoldstandardaspectsfilename"), "UTF-8");
 			Set<Map.Entry> entries = sortedAspectsMap.entrySet();
 			for(Map.Entry entry : entries) {
 				writer.println(entry.getKey()+","+String.valueOf(entry.getValue()));
@@ -128,7 +128,7 @@ public class Evaluation {
 		Map<String,Integer> aspectsMap = new HashMap<String,Integer>();
 		Map<String,Integer> aspectsMapGS = new HashMap<String,Integer>();
 		try {
-			br = new BufferedReader(new FileReader(GlobalVars.goldStandardAspectsFileName)); 
+			br = new BufferedReader(new FileReader(PropertiesFactory.getPropertyValue("goldstandardaspectsfilename"))); 
 			String line = "";
 			while ((line = br.readLine()) != null) {				
 				String aspectFrequency[] = line.split(",");
@@ -136,7 +136,7 @@ public class Evaluation {
 			}
 			br.close();
 						
-			br = new BufferedReader(new FileReader(GlobalVars.aspectsFileName));			
+			br = new BufferedReader(new FileReader(PropertiesFactory.getPropertyValue("aspectsfilename")));			
 			while ((line = br.readLine()) != null) {				
 				String aspectFrequency[] = line.split(",");
 				aspectsMap.put(aspectFrequency[0],Integer.parseInt(aspectFrequency[1]));

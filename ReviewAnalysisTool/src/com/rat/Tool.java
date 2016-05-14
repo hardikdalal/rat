@@ -1,7 +1,6 @@
 package com.rat;
 
 import java.util.*;
-import java.sql.*;
 import java.io.*;
 
 public class Tool {
@@ -15,8 +14,9 @@ public class Tool {
 				System.out.println("-----------------Review Analysis Tool-----------------");
 				System.out.println("Select a product review dataset to proceed:");												
 				int i = 0;
-				reviewFileNames = new ArrayList<String>();
-				File folder = new File("resources/dataset/");
+				reviewFileNames = new ArrayList<String>();					
+				File folder = new File(PropertiesFactory.getPropertyValue("datasetdirectory"));
+				
 				for (File fileEntry : folder.listFiles()) {
 					reviewFileNames.add(fileEntry.getName());					
 					System.out.println("Press " + String.valueOf(++i) + " for " + fileEntry.getName());
@@ -29,10 +29,13 @@ public class Tool {
 					continue;
 				}
 				break;
-			}			
-			System.out.println("Following dataset will be used in further processing: "+reviewFileNames.get(choice));			
+			}
+			String temp = PropertiesFactory.getPropertyValue("datasetdirectory")+reviewFileNames.get(choice);			
+			PropertiesFactory.setProperty("reviewfilename",temp);
+			System.out.println("Following dataset will be used in further processing: "+PropertiesFactory.getPropertyValue("reviewfilename"));			
 			System.out.println("Data collection in progress.");
-			TextReviewHandler.parseTextFile(reviewFileNames.get(choice));
+			System.out.println(PropertiesFactory.getPropertyValue("reviewfilename"));
+			TextReviewHandler.parseTextFile(PropertiesFactory.getPropertyValue("reviewfilename"));
 			/*
 			createTable();
 			int reviewCount = loadReviewsInDatabase(TextReviewHandler.parseXML(GlobalVars.xmlFileName));		
@@ -42,7 +45,7 @@ public class Tool {
 			}			
 			generateReviewTextFile();
 			*/
-			StanfordDependencyParser.parseReviewFile(GlobalVars.reviewFileName);
+			StanfordDependencyParser.parseReviewFile(PropertiesFactory.getPropertyValue("reviewfilename"));
 			
 			choice = 0;
 			while(true) {				
