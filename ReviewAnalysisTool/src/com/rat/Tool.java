@@ -29,22 +29,11 @@ public class Tool {
 					continue;
 				}
 				break;
-			}
-			String temp = PropertiesFactory.getPropertyValue("datasetdirectory")+reviewFileNames.get(choice);			
-			PropertiesFactory.setProperty("reviewfilename",temp);
-			System.out.println("Following dataset will be used in further processing: "+PropertiesFactory.getPropertyValue("reviewfilename"));			
-			System.out.println("Data collection in progress.");
-			System.out.println(PropertiesFactory.getPropertyValue("reviewfilename"));
-			TextReviewHandler.parseTextFile(PropertiesFactory.getPropertyValue("reviewfilename"));
-			/*
-			createTable();
-			int reviewCount = loadReviewsInDatabase(TextReviewHandler.parseXML(GlobalVars.xmlFileName));		
-			if(reviewCount < 1) {
-				System.out.println("No instances found in XML file");
-				System.exit(0);
 			}			
-			generateReviewTextFile();
-			*/
+			String reviewFile = PropertiesFactory.getPropertyValue("datasetdirectory")+reviewFileNames.get(choice);
+			System.out.println("Following dataset will be used in further processing: "+reviewFile);			
+			System.out.println("Data collection in progress.");			
+			TextReviewHandler.parseTextFile(reviewFile);			
 			StanfordDependencyParser.parseReviewFile(PropertiesFactory.getPropertyValue("reviewfilename"));
 			
 			choice = 0;

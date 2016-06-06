@@ -1,0 +1,11 @@
+Rank	Aspect -> Sentiment Score
+1		player -> -48.25
+2		-rrb- -> 16.625
+3		quality -> 24.25
+4		-lrb- -> -0.25
+5		feature -> 22.25
+6		battery -> 25.25
+7		time -> -11.125
+8		one -> 11.375
+9		sound -> 31.875
+10		look -> 10.0

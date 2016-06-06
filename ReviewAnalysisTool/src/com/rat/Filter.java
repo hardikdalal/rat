@@ -99,15 +99,14 @@ public class Filter {
 			br = new BufferedReader(new FileReader(PropertiesFactory.getPropertyValue("otpairsfilename")));			
 			line = "";
 			while ((line = br.readLine()) != null) {
-				String pair[] = line.split(",");
+				String pair[] = line.split(",");				
 				Map<String,Integer> opinions = new HashMap<String,Integer>();
 				
 				for(int i = 1; i<pair.length; ++i) {					
-					String opinionFrequency[] = pair[i].split("/");					
+					String opinionFrequency[] = pair[i].split(";");					
 					opinions.put(opinionFrequency[0],Integer.parseInt(opinionFrequency[1]));
 				}
 				otMap.put(pair[0],opinions);
-				
 			}
 			br.close();
 			
@@ -118,7 +117,7 @@ public class Filter {
 				if(opinionMap!=null) {
 					for(Map.Entry<String,Integer> opinion : opinionMap.entrySet()) {
 						opinionStr.append(opinion.getKey());
-						opinionStr.append("/");
+						opinionStr.append(";");
 						opinionStr.append(opinion.getValue());					
 						opinionStr.append(",");
 					}

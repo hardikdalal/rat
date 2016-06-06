@@ -1,4 +1,5 @@
 [t]
+image[+2]##Good image quality. 
 SD500[+2]##We really enjoyed shooting with the Canon PowerShot SD500. 
 design[+2]##It has an exterior design that combines form and function more elegantly than any point-and-shoot we've ever tested. 
 image-processing system[+1]##A Digic II-powered image-processing system enables the SD500 to snap a limitless stream of 7-megapixel photos at a respectable clip, its start-up time is tops in its class, and it delivers decent photos when compared to its competition. 

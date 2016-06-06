@@ -9,6 +9,11 @@
 			<groupId>edu.stanford.nlp</groupId>
 			<artifactId>stanford-corenlp</artifactId>
 			<version>3.6.0</version>
+		</dependency>		
+		<dependency>
+			<groupId>edu.stanford.nlp</groupId>
+			<artifactId>stanford-parser</artifactId>
+			<version>2.0.4</version>
 		</dependency>
 		<!-- http://mvnrepository.com/artifact/org.slf4j/slf4j-simple -->
 		<dependency>
@@ -16,7 +21,6 @@
 			<artifactId>slf4j-simple</artifactId>
 			<version>1.6.1</version>
 		</dependency>
-
 	</dependencies>
 	<build>
 		<sourceDirectory>src</sourceDirectory>

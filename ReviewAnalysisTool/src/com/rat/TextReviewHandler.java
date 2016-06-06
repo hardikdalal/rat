@@ -11,7 +11,6 @@ public class TextReviewHandler {
 	public static ArrayList<Review> parseXML(String fileName) {
 		ArrayList<Review> reviewArray = new ArrayList<Review>();
 		try {
-			
 			DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder builder = factory.newDocumentBuilder();
 			Document doc = builder.parse(fileName);			
@@ -26,7 +25,7 @@ public class TextReviewHandler {
 					Review review = new Review(textValue,"null","null",9);
 					reviewArray.add(review);
 				}
-				else {				
+				else {
 					for (int j = 0; j < aspectTerms.getLength(); ++j) {
 						Element value = (Element) aspectTerms.item(j);				
 						NodeList aspects = value.getElementsByTagName("aspectTerm");				
@@ -54,12 +53,12 @@ public class TextReviewHandler {
 		}		
 		return reviewArray;
 	}	
-	public static void parseTextFile(String fileName) {		
+	public static void parseTextFile(String fileName) {
 		ArrayList<String> reviewList = new ArrayList<String>();
 		Map<String,Integer> aspectMap = new HashMap<String,Integer>();
 		BufferedReader br = null;
-		try {			
-			br = new BufferedReader(new FileReader(PropertiesFactory.getPropertyValue("reviewfilename"))); 
+		try {
+			br = new BufferedReader(new FileReader(fileName)); 
 			String line = "";
 			String regex = "\\[.\\d\\]";
 			Pattern pattern = Pattern.compile(regex);
@@ -71,7 +70,7 @@ public class TextReviewHandler {
 					String text = line.substring(line.lastIndexOf("##") + 1);
 					reviewList.add(text);
 				}
-				else {					
+				else {
 					String[] tempArray = line.split("##");					
 					String text = tempArray[1];
 					//text = text.replaceAll("\\#", "");
@@ -101,14 +100,21 @@ public class TextReviewHandler {
 				}
 			}
 			br.close();			
-			File reviewFileName = new File(PropertiesFactory.getPropertyValue("reviewfilename"));
-			Files.deleteIfExists(reviewFileName.toPath());
-			reviewFileName.createNewFile();
-			PrintWriter writer = new PrintWriter(reviewFileName, "UTF-8");
+			File file = new File(PropertiesFactory.getPropertyValue("reviewfilename"));
+			if(file.exists())
+				file.delete();
+			file.createNewFile();
+			PrintWriter writer = new PrintWriter(file, "UTF-8");
 			for(String reviewItem : reviewList) {
-				writer.println(reviewItem);				
+				if(reviewItem.length()>180)
+					continue;
+				writer.println(reviewItem);
 			}			
 			writer.close();
+			file = new File(PropertiesFactory.getPropertyValue("goldstandardaspectsfilename"));
+			if(file.exists())
+				file.delete();
+			file.createNewFile();
 			writer = new PrintWriter(PropertiesFactory.getPropertyValue("goldstandardaspectsfilename"), "UTF-8");			
 			for(Map.Entry<String,Integer> entry : aspectMap.entrySet()) {				
 				writer.println(entry.getKey()+","+entry.getValue());				
@@ -117,6 +123,7 @@ public class TextReviewHandler {
 		}
 		catch(Exception ex) {
 			ex.printStackTrace(System.err);
+			System.exit(0);
 		}
 	}
 }

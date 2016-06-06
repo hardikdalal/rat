@@ -18,7 +18,7 @@ public class SWN3 {
 				String aspectOpinionPair[] = line.split(",");
 				Map<String,Integer> opinionsMap = new HashMap<String,Integer>();				
 				for(int i = 1; i<aspectOpinionPair.length;++i) {
-					String opinionFrequency[] = aspectOpinionPair[i].split("/");
+					String opinionFrequency[] = aspectOpinionPair[i].split(";");
 					opinionsMap.put(opinionFrequency[0],Integer.parseInt(opinionFrequency[1]));
 					opinions.add(opinionFrequency[0]);
 				}

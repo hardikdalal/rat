@@ -1,9 +1,6 @@
 package com.rat;
 
-import edu.stanford.nlp.process.TokenizerFactory;
-import edu.stanford.nlp.process.CoreLabelTokenFactory;
 import edu.stanford.nlp.process.DocumentPreprocessor;
-import edu.stanford.nlp.process.PTBTokenizer;
 import edu.stanford.nlp.trees.*;
 import edu.stanford.nlp.parser.lexparser.LexicalizedParser;
 
@@ -43,12 +40,12 @@ public class StanfordDependencyParser {
 			gsf = tlp.grammaticalStructureFactory();
 		// You could also create a tokenizer here (as below) and pass it to DocumentPreprocessor.
 		
-		Map<String,String> opinionWords = new HashMap<String,String>();
-		Map<String,String> aspectTerms = new HashMap<String,String>();		
-		opinionWords.put("null","good");
-		opinionWords.put("null","bad");
-		Vector adjectiveTags = new Vector();
-		Vector nounTags = new Vector();
+		HashMap<String, String> opinionWords = new HashMap<String,String>();
+		HashMap<String, String> aspectTerms = new HashMap<String,String>();		
+		opinionWords.put("0,0,0","good");
+		opinionWords.put("0,0,1","bad");
+		Vector<String> adjectiveTags = new Vector<String>();
+		Vector<String> nounTags = new Vector<String>();
 		adjectiveTags.add("JJ");
 		adjectiveTags.add("JJR");
 		adjectiveTags.add("JJS");
@@ -61,6 +58,7 @@ public class StanfordDependencyParser {
 			flag = false;
 			int i = 0;
 			for (List<HasWord> sentence : new DocumentPreprocessor(fileName)) {
+//				System.out.println("Sentence - "+String.valueOf(i));
 				Tree parse = lp.apply(sentence);
 				++i;
 				// Print sentence with POS tags
@@ -69,9 +67,8 @@ public class StanfordDependencyParser {
 				
 				if (gsf != null) {
 					GrammaticalStructure gs = gsf.newGrammaticalStructure(parse);
-					Collection tdl = gs.typedDependenciesCCprocessed();					
-					Iterator iterator = tdl.iterator();
-					int count = 0;
+					Collection<?> tdl = gs.typedDependenciesCCprocessed();					
+					Iterator<?> iterator = tdl.iterator();
 					int j = 0;
 					while (iterator.hasNext()) {
 						++j;
@@ -81,7 +78,7 @@ public class StanfordDependencyParser {
 						String depTag = td.dep().tag();
 						String governor =td.gov().originalText();
 						String govTag = td.gov().tag();						
-						//System.out.println("Relation: " +gr.toString()+"\nGovernor: "+td.gov()+"\nDependent: "+td.dep());						
+//						System.out.println("Relation: " +gr.toString()+"("+td.gov()+","+td.dep()+")");
 						
 						String govLoc = String.valueOf(i)+","+String.valueOf(j)+","+String.valueOf(0);
 						String depLoc = String.valueOf(i)+","+String.valueOf(j)+","+String.valueOf(1);
@@ -97,9 +94,9 @@ public class StanfordDependencyParser {
 									updateOTMap(governor,dependent);
 								}
 							}
-							//R12
+							//R12 
 							if(gr.toString().contains("dobj")) {
-								Collection tdl2 = gs.typedDependenciesCCprocessed();
+								Collection<?> tdl2 = gs.typedDependenciesCCprocessed();
 								int k = 0;
 								for (Object o2 : tdl2) {
 									++k;
@@ -109,7 +106,7 @@ public class StanfordDependencyParser {
 									String depTag2 = td2.dep().tag();
 									String governor2 = td2.gov().originalText();
 									
-									String govLoc2 = String.valueOf(i)+","+String.valueOf(k)+","+String.valueOf(0);
+//									String govLoc2 = String.valueOf(i)+","+String.valueOf(k)+","+String.valueOf(0);
 									String depLoc2 = String.valueOf(i)+","+String.valueOf(k)+","+String.valueOf(1);
 
 									if(gr2.toString().contains("nsubj") && governor2.equalsIgnoreCase(governor)) {									
@@ -135,7 +132,7 @@ public class StanfordDependencyParser {
 								}
 							}
 							//R42
-							Collection tdl2 = gs.typedDependenciesCCprocessed();
+							Collection<?> tdl2 = gs.typedDependenciesCCprocessed();
 							int k = 0;
 							for (Object o2 : tdl2) {
 								++k;
@@ -145,7 +142,7 @@ public class StanfordDependencyParser {
 								String depTag2 = td2.dep().tag();
 								String governor2 = td2.gov().originalText();
 
-								String govLoc2 = String.valueOf(i)+","+String.valueOf(k)+","+String.valueOf(0);
+//								String govLoc2 = String.valueOf(i)+","+String.valueOf(k)+","+String.valueOf(0);
 								String depLoc2 = String.valueOf(i)+","+String.valueOf(k)+","+String.valueOf(1);
 
 								if(gr2.toString().contains(gr.toString()) && governor.equalsIgnoreCase(governor2)) {
@@ -161,7 +158,7 @@ public class StanfordDependencyParser {
 						else if(aspectTerms.containsValue(dependent)) {							
 							//R22
 							if(gr.toString().contains("nsubj")) {
-								Collection tdl2 = gs.typedDependenciesCCprocessed();
+								Collection<?> tdl2 = gs.typedDependenciesCCprocessed();
 								int k = 0;
 								for (Object o2 : tdl2) {
 									++k;
@@ -171,7 +168,7 @@ public class StanfordDependencyParser {
 									String depTag2 = td2.dep().tag();
 									String governor2 = td2.gov().originalText();
 									
-									String govLoc2 = String.valueOf(i)+","+String.valueOf(k)+","+String.valueOf(0);
+//									String govLoc2 = String.valueOf(i)+","+String.valueOf(k)+","+String.valueOf(0);
 									String depLoc2 = String.valueOf(i)+","+String.valueOf(k)+","+String.valueOf(1);
 									
 									if(gr2.toString().contains("dobj") && governor2.equalsIgnoreCase(governor)) {
@@ -198,7 +195,7 @@ public class StanfordDependencyParser {
 							if(gr.toString().contains("nsubj")) {
 								if(governor.equalsIgnoreCase("has")) {
 									//Find governor in dobj relation
-									Collection tdl2 = gs.typedDependenciesCCprocessed();
+									Collection<?> tdl2 = gs.typedDependenciesCCprocessed();
 									int k = 0;
 									for (Object o2 : tdl2) {
 										++k;
@@ -208,7 +205,7 @@ public class StanfordDependencyParser {
 										String depTag2 = td2.dep().tag();
 										String governor2 = td2.gov().originalText();
 
-										String govLoc2 = String.valueOf(i)+","+String.valueOf(k)+","+String.valueOf(0);
+//										String govLoc2 = String.valueOf(i)+","+String.valueOf(k)+","+String.valueOf(0);
 										String depLoc2 = String.valueOf(i)+","+String.valueOf(k)+","+String.valueOf(1);
 										
 										if(gr2.toString().contains("dobj") && governor2.equalsIgnoreCase(governor)) {										
@@ -267,7 +264,8 @@ public class StanfordDependencyParser {
 		}
 		
 		PrintWriter writer = null;
-		try	{			
+		try	{
+			
 			writer = new PrintWriter(PropertiesFactory.getPropertyValue("aspectsfilename"), "UTF-8");			
 			for(Map.Entry<String,Integer> term : aspectDict.entrySet()) {
 				writer.println(term.getKey()+","+String.valueOf(term.getValue()));
@@ -283,11 +281,11 @@ public class StanfordDependencyParser {
 						
 			writer = new PrintWriter(PropertiesFactory.getPropertyValue("otpairsfilename"), "UTF-8");			
 			for(Map.Entry<String,Map<String,Integer>>  otPair : otMap.entrySet()) {
-				StringBuilder opinionStr = new StringBuilder();				
+				StringBuilder opinionStr = new StringBuilder();
 				Map<String,Integer> opinionMap = otPair.getValue();				
 				for(Map.Entry<String,Integer> opinion : opinionMap.entrySet()) {
 					opinionStr.append(opinion.getKey());
-					opinionStr.append("/");
+					opinionStr.append(";");
 					opinionStr.append(opinion.getValue());					
 					opinionStr.append(",");
 				}

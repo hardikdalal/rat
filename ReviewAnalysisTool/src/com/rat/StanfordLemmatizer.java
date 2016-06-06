@@ -3,9 +3,6 @@ import java.util.Vector;
 import java.util.List;
 import java.util.Properties;
 
-import java.io.PrintStream;
-import java.io.OutputStream;
-
 import edu.stanford.nlp.ling.CoreAnnotations.LemmaAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.SentencesAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.TokensAnnotation;
@@ -21,6 +18,7 @@ public class StanfordLemmatizer {
     public StanfordLemmatizer() {
         Properties props;
         props = new Properties();
+        props.put("pos.model", PropertiesFactory.getPropertyValue("taggermodel"));
         props.put("annotators", "tokenize, ssplit, pos, lemma");        
         this.pipeline = new StanfordCoreNLP(props);
     }
@@ -28,7 +26,7 @@ public class StanfordLemmatizer {
     public Vector<String> lemmatize(String documentText) {		
         Vector<String> lemmatizedSentences = new Vector<String>();		       
         Annotation document = new Annotation(documentText);        
-        this.pipeline.annotate(document);        
+        this.pipeline.annotate(document);
         List<CoreMap> sentences = document.get(SentencesAnnotation.class);		
         for(CoreMap sentence: sentences) {            
 			String lemmas = "";
